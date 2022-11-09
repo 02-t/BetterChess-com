@@ -1,0 +1,26 @@
+{
+	"manifest_version": 3,
+	"name": "Chess.com save games",
+	"version": "1",
+
+	"action": {
+		"default_popup": "popup.html",
+		"default_title": "hello"
+	},
+
+	"permissions": [
+		"storage"
+	],
+
+	"content_scripts": [
+		{
+			"matches": [
+				"https://*.chess.com/*",
+				"https://*.lichess.org/*"
+			],
+
+			"js": ["jquery.js", "BetterChess_com.js", "AnalysisTab-chess_com.js", "MembersRow-chess_com.js", "lichess-load_analysis.js"],
+			"css": ["content-styles.css"]
+		}
+	]
+}
