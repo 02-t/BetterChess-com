@@ -1,8 +1,10 @@
 let url = window.location.href
 
 
-function sendPGNToLichess (pgn, player_color) {
-    window.open("https://lichess.org/paste?run?" + player_color + pgn, 'blankPage')
+function sendPGNToLichess (pgn, player_color, stay_in_tab) {
+    let link = "https://lichess.org/paste?run?" + player_color + pgn
+    if (stay_in_tab) window.location.href = link
+    else window.open(link, 'blankPage')
 }
 
 
@@ -106,13 +108,30 @@ window.addEventListener('load', function () {
     else if (url.indexOf("https://www.chess.com/game/") > -1)  { // same thing as above, waits for some elements to load then proceeds to call the function
         var checkExist = setInterval(function() {
             if ((document.getElementsByClassName("ui_v5-button-component ui_v5-button-basic")).length > 0) {
-                setTimeout(addLichessAnalysisButton_livegame, 300)
-               clearInterval(checkExist)
+                setTimeout(addLichessAnalysisButton_livegame, 10)
+                clearInterval(checkExist)
             }
          }, 100)
     }
 
-    else if (url.indexOf("https://www.chess.com/members/") > -1) addLichessAnalysisButton_members_row();
+    else if (url.indexOf("https://www.chess.com/member/") > -1) {
+        var checkExist = setInterval(function() {
+            if ((document.getElementsByClassName("archived-games-user-cell")).length > 0) {
+                addLichessAnalysisButton_row("archived-games-user-cell")
+                clearInterval(checkExist)
+            }
+        }, 100)
+    }
+
+    else if (url.indexOf("https://www.chess.com/games/archive/") > -1) {
+        var checkExist = setInterval(function() {
+            if ((document.getElementsByClassName("archive-games-user-cell")).length > 0) {
+                addLichessAnalysisButton_row("archive-games-user-cell")
+                clearInterval(checkExist)
+            }
+        }, 100)
+    }
+
     else if (url.indexOf("https://lichess.org/paste?run?") > -1) loadLichessPGN();
     else if (url.indexOf("https://lichess.org/") > -1) flipLichessBoard();
 })

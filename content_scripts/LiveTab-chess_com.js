@@ -28,7 +28,9 @@ function addLichessAnalysisButton_livegame () {
     let pgn = header + game_string
     console.log(pgn)
 
-    let button_parent = document.getElementsByClassName("daily-game-footer-game-over")[0]
+    let button_parent = document.getElementsByClassName("daily-game-footer-game-over")
+    if (button_parent.length > 0) button_parent = button_parent[0]
+    else button_parent = document.getElementsByClassName("daily-game-footer-component daily-game-footer-isFinished undefined")[0]
 
     var button = document.createElement("button")
     button.innerHTML = `<img src=https://images.prismic.io/lichess/5cfd2630-2a8f-4fa9-8f78-04c2d9f0e5fe_lichess-box-1024.png?auto=compress,format class="lichess-img-style">&nbsp;&nbsp;Analyze with Lichess`
@@ -42,6 +44,8 @@ function addLichessAnalysisButton_livegame () {
 
     button_parent.appendChild(button)
     button_parent.appendChild(div)
+
+    if (url.indexOf("?open*in*lichess") > -1) sendPGNToLichess(pgn, player_color, true)
 
     pressEnterToOpenLichessAnalysis (pgn, player_color)
 }

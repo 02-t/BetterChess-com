@@ -3,6 +3,10 @@
 	"name": "Chess.com save games",
 	"version": "1",
 
+	"icons": {
+		"128": "icon128.png"
+	  },
+
 	"action": {
 		"default_popup": "popup.html",
 		"default_title": "hello"
@@ -20,7 +24,7 @@
 			],
 
 			"js": ["content_scripts/BetterChess_com.js", "content_scripts/AnalysisTab-chess_com.js",
-				"content_scripts/MembersRow-chess_com.js", "content_scripts/lichess-load_analysis.js", "content_scripts/LiveTab-chess_com.js"],
+				"content_scripts/AnyRow-chess_com.js", "content_scripts/lichess-load_analysis.js", "content_scripts/LiveTab-chess_com.js"],
 
 			"css": ["content-styles.css"]
 		}
