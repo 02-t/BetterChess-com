@@ -8,7 +8,7 @@
 	  },
 
 	"action": {
-		"default_popup": "popup.html",
+		"default_popup": "popup/popup.html",
 		"default_title": "hello"
 	},
 
@@ -23,10 +23,10 @@
 				"https://*.lichess.org/*"
 			],
 
-			"js": ["content_scripts/BetterChess_com.js", "content_scripts/AnalysisTab-chess_com.js",
+			"js": ["content_scripts/BetterChess_com.js", "content_scripts/AnalysisTab-chess_com.js", "content_scripts/DisableRating-chess_com.js",
 				"content_scripts/AnyRow-chess_com.js", "content_scripts/lichess-load_analysis.js", "content_scripts/LiveTab-chess_com.js"],
 
-			"css": ["content-styles.css"]
+			"css": ["content_scripts/content-styles.css"]
 		}
 	]
 }

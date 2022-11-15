@@ -1,0 +1,56 @@
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    width: 200px;
+    height: max-content;
+    background-color: #E5F6FB;
+    user-select: none;
+    font-size: 16px;
+}
+
+img {
+    width: 25px;
+    aspect-ratio: 1;
+    float: left;
+    padding-right: 6px;
+}
+
+div {
+    margin-top: 12px;
+    cursor: pointer;
+    margin-bottom: 4px;
+}
+
+hr {
+    margin-top: 16px;
+}
+
+.sub {
+    margin-top: 0px;
+    font-size: 14px;
+    padding-left: 6px;
+}
+
+span {
+    font-size: 16px;
+    float: right;
+    font-weight: 600;
+}
+
+.yes {
+    color: darkcyan;
+}
+
+.no {
+    color: darkred;
+}
+
+.maybe {
+    color: darkorange;
+}
+
+h1 {
+    padding: 0px;
+    margin:0px;
+    margin-bottom: 6px;
+    font-size: 18px;
+}
