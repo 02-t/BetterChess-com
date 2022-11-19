@@ -102,6 +102,18 @@
     visibility: hidden;
 }
 
+.playerbox-avatar {
+    visibility: hidden;
+}
+
+.playerbox-row {
+    visibility: hidden;
+}
+
+.playerbox-username {
+    visibility: hidden;
+}
+
 .default-body-theme {
     background-image: none;
     background-color: #312e2b;
