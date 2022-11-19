@@ -15,7 +15,7 @@ Chromium extension aimed to make the Chess.com experience better by adding new f
   
   
   # How to install:
-1. [Download the zip](https://github.com/02-t/BetterChess-com/releases/tag/v1.0)
+1. [Download the zip](https://github.com/02-t/BetterChess-com/releases)
 2. Extract it
 3. Open your chromium-based browser (chrome, opera etc.)
 4. Go to chrome://extensions
