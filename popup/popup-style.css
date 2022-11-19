@@ -1,10 +1,17 @@
 body {
     font-family: 'Trebuchet MS', sans-serif;
-    width: 200px;
+    width: 420px;
     height: max-content;
     background-color: #E5F6FB;
     user-select: none;
     font-size: 16px;
+}
+
+h1 {
+    padding: 0px;
+    margin:0px;
+    margin-bottom: 6px;
+    font-size: 18px;
 }
 
 img {
@@ -15,19 +22,14 @@ img {
 }
 
 div {
-    margin-top: 12px;
     cursor: pointer;
     margin-bottom: 4px;
+    margin-top: 6px;
 }
 
 hr {
     margin-top: 16px;
-}
-
-.sub {
-    margin-top: 0px;
-    font-size: 14px;
-    padding-left: 6px;
+    margin-bottom: 6px;
 }
 
 span {
@@ -36,21 +38,46 @@ span {
     font-weight: 600;
 }
 
-.yes {
-    color: darkcyan;
+.item {
+    width: 200px;
+    float: left;
+    cursor: default;
 }
 
-.no {
-    color: darkred;
+.thin {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border: none;
+    height: 1px;
+    background-color: #CDE6EE;
+    width: 70%;
 }
 
-.maybe {
-    color: darkorange;
+.hidden {
+    visibility: hidden;
+    overflow: hidden;
+    max-width: 0px;
+    max-height: 0px;
+    display: none;
+    position: absolute;
 }
 
-h1 {
-    padding: 0px;
-    margin:0px;
-    margin-bottom: 6px;
-    font-size: 18px;
+.break{
+    width: 1px;
+    margin-left: 12px;
+    margin-right: 7px;
+    margin-top: 20px;
+    float: left;
+    background-color: #CDE6EE;
+    height: 300px;
+}
+
+.sub {
+    margin-top: 0px;
+    font-size: 14px;
+    padding-left: 6px;
+}
+
+.not-clickable {
+    cursor: auto;
 }

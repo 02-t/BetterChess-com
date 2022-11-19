@@ -7,27 +7,57 @@
 </head>
 
 <body>
-    <h1>
-        <img src="icon.png">Better-Chess.com</h1> 
+    <h1><img src="icon.png">Better-Chess.com</h1> 
 
-    <div class="main" id="hide_names">Hide ALL names<span class="check"></span></div>
-    <div class="sub" id="hide_opponent_name">opponent name<span class="check sub"></dispanv></div>
-    <div class="sub" id="hide_my_name">my name<span class="check sub"></span></div>
+    <div class="not-clickable">
 
-    <hr>
+
+        <div class="item">
+            <div id="hide_names">Hide ALL names<span class="check"></span></div>
+            <div class="sub" id="hide_opponent_name">only hide opponent name<span class="check sub"></dispanv></div>
+        
+            <hr>
+            
+            <div id="hide_rating">Hide ALL rating<span class="check"></span></div>
+            <div class="sub" id="hide_opponent_rating">only hide opponent rating<span class="check sub"></dispanv></div>
+        
+            <hr>
+            
+            <div id="hide_avatar">Hide ALL avatars<span class="check"></span></div>
+            <div class="sub" id="hide_opponent_avatar">hide opponent avatar<span class="check sub"></dispanv></div>
+            
+            <hr>
+            
+            <div id="hide_flag">Hide ALL flags<span class="check"></span></div>
+            <div class="sub" id="hide_opponent_flag">only hide opponent flag<span class="check sub"></dispanv></div>
     
-    <div class="main" id="hide_rating">Hide ALL rating<span class="check"></span></div>
-    <div class="sub" id="hide_opponent_rating">opponent rating<span class="check sub"></dispanv></div>
-    <div class="sub" id="hide_my_rating">my rating<span class="check sub"></span></div>
+        </div>
 
-    <hr>
+        <div class="break"></div>
 
-    <div class="main" id="lichess">Analyze with lichess<span class="check"></span></div>
-    <div class="sub" id="live">live games<span class="check sub"></span></div>
-    <div class="sub" id="analy">analysis<span class="check sub"></span></div>
-    <div class="sub" id="history">history<span class="check sub"></span></div>
-    <div class="sub" id="enter">press enter to analyse<span class="check sub"></dispanv></div>
-    <div class="sub" id="flip">flip board message<span class="check sub"></dispanv></div>
+        <div class="item">
+            
+            <div id="lichess">Analyze with lichess<span class="check"></span></div>
+            <div class="sub" id="live">live games<span class="check sub"></span></div>
+            <div class="sub" id="analy">analysis<span class="check sub"></span></div>
+            <div class="sub" id="history">history<span class="check sub"></span></div>
+            <div class="sub" id="enter">press enter to analyse<span class="check sub"></dispanv></div>
+            <div class="sub" id="flip">flip board message<span class="check sub"></dispanv></div>
+
+            <hr>
+
+            <div class="not-clickable">Misc</div>
+
+            <div class="sub" id="membership">disable membership ads<span class="check sub"></span></div>
+            <div class="sub" id="flairs">disable flairs/badges<span class="check sub"></span></div>
+            <div class="sub" id="marketing_banner">hide marketing banner<span class="check sub"></span></div>
+            <div class="sub" id="default_theme">default theme to profiles<span class="check sub"></dispanv></div>
+            <div class="sub" id="russian_flag">show russian flag<span class="check sub"></dispanv></div>
+
+        </div>
+
+
+    </div>
 
 
     <script src="popup-script.js"></script>
