@@ -1,0 +1,121 @@
+.user-tagline-rating {
+    visibility: hidden;
+}
+
+.user-tagline-popover-rating {
+    visibility: hidden;
+}
+
+.stat-section-expanded {
+    visibility: hidden;
+}
+
+.stat-section-stats-section {
+    visibility: hidden;
+}
+
+.user-rating {
+    visibility: hidden;
+}
+
+.game-over-rating-component {
+    visibility: hidden;
+}
+
+.user-popover-ratings {
+    visibility: hidden;
+}
+
+.live-game-over-component {
+    visibility: hidden;
+}
+
+.country-flags-component {
+    visibility: hidden;
+}
+
+.home-user-img {
+    visibility: hidden;
+}
+
+.user-avatar-image {
+    visibility: hidden;
+}
+
+.profile-header-avatar {
+    visibility: hidden;
+}
+
+.avatar-component {
+    visibility: hidden;
+}
+
+.post-view-meta-image {
+    visibility: hidden;
+}
+
+.versus-avatar {
+    visibility: hidden;
+}
+
+.profile-card-username {
+    visibility: hidden;
+}
+
+.user-username-component {
+    visibility: hidden;
+}
+
+.user-flair-icon-component {
+    visibility: hidden;
+}
+
+.username {
+    visibility: hidden;
+}
+
+.diamond-top {
+    visibility: hidden;
+}
+
+.diamond {
+    visibility: hidden;
+}
+
+.modal-upgrade-game-review-component {
+    visibility: hidden;
+}
+
+.analysis-upgrade-button-component {
+    visibility: hidden;
+}
+
+.modal-trial-component {
+    visibility: hidden;
+}
+
+.coach-summary-button {
+    visibility: hidden;
+}
+
+.player-image {
+    visibility: hidden;
+}
+
+.default-body-theme {
+    background-image: none;
+    background-color: #312e2b;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.hidden {
+    visibility: hidden;
+    overflow: hidden;
+    max-width: 0px;
+    max-height: 0px;
+    display: none;
+    position: absolute;
+}

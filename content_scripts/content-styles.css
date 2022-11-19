@@ -1,0 +1,52 @@
+.lichess-button-style {
+    border-radius: 6px;
+    background-color: white;
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 2px;
+    padding-bottom: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 300;
+    position: relative;
+}
+
+.extras__ {
+    border-radius: 6px;
+    padding-top: 9px;
+    padding-bottom: 10px;
+}
+
+.extras__2 {
+    margin-top: 16px;
+    margin-bottom: 6px;
+}
+
+.extras__div {
+    text-align: center;
+    color: red;
+}
+
+.extras__div2 {
+    margin-top: 10px;
+    color: red;
+    margin-bottom: 6px;
+}
+
+.lichess-img-style {
+    max-width: 25px;
+    aspect-ratio: 1;
+}
+
+.press-f-div {
+    z-index: 300;
+    position: relative;
+    text-align: center;
+    padding-top: 50%;
+    padding-bottom: 50%;
+    font-size: 100px;
+    background-color: #000;
+    color: white;
+    border-radius: 5px;
+}
