@@ -1,6 +1,8 @@
 # <img height="25" width="25" src="https://user-images.githubusercontent.com/93790398/202852135-d4e8850e-77bd-40ce-9eb6-1d2757041cd8.png"> BetterChess-com
 Chromium extension aimed to make the Chess.com experience better by adding new features. 
 
+Showcase: https://www.youtube.com/watch?v=xIBOOLXP_G0
+
 
 # Features:
   - Export games to lichess either by pressing "ENTER" or by pressing a button
