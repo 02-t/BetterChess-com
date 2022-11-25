@@ -55,6 +55,8 @@ function disableUserInfo() {
         toDisable("user-username-component", hide)
         toDisable("username", hide)
         toDisable("playerbox-username", hide)
+        toDisable("game-over-player-username", hide)
+        toDisable("home-username-link", hide)
         if (hide && document.title.indexOf("Chess: ") > -1) document.title = "Chess: _ vs _ - Chess.com"
     }
 
@@ -71,6 +73,8 @@ function disableUserInfo() {
         toDisable("modal-upgrade-game-review-component", hide)
         toDisable("coach-summary-button", hide)
         toDisable("modal-trial-component", hide)
+        toDisable("game-over-ad-component", hide)
+        toDisable("board-layout-ad", hide)
     }
 
 
@@ -95,8 +99,11 @@ function disableUserInfo() {
             if (result == "YES") {
                 if (url.indexOf("chess.com/game/") > -1)
                     removeOneElement("user-username-component", 0)
-                else if (url.indexOf("chess.com/variants/") > -1)
+                else if (url.indexOf("chess.com/variants/") > -1) {
                     removeOneElement("playerbox-username", 0)
+                    toDisable("game-over-player-username", hide)
+                    toDisable("live-game-start-component", hide)
+                }
             }
         })
 

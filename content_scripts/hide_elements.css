@@ -66,6 +66,10 @@
     visibility: hidden;
 }
 
+.board-layout-ad {
+    visibility: hidden;
+}
+
 .user-flair-icon-component {
     visibility: hidden;
 }
@@ -95,6 +99,14 @@
 }
 
 .coach-summary-button {
+    visibility: hidden;
+}
+
+.game-over-player-username {
+    visibility: hidden;
+}
+
+.home-username-link {
     visibility: hidden;
 }
 
