@@ -13,7 +13,7 @@ Showcase: https://www.youtube.com/watch?v=xIBOOLXP_G0
   - Hide flags
   - Disable membership ads
   - Disable marketing banners
-  - Show default background insteam of custom one when viewing another profile
+  - Show default background instead of custom one when viewing another profile
   
   
   # How to install:
