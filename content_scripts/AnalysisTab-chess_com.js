@@ -5,11 +5,11 @@ function getPGN_analysis() {
 
         for (let i = 0; i < table_contents.length; i += 1) {
             let element = table_contents[i]
-            if (element.className == "move-node svelte-nkpmj2") {
-                let number = element.getElementsByClassName("move-number svelte-nkpmj2")
+            if (element.className == "move-node") {
+                let number = element.getElementsByClassName("move-number")
                 if (number.length > 0) game_string += number[0].textContent + "*"
 
-                let move = element.getElementsByClassName("move-text svelte-nkpmj2")[0]
+                let move = element.getElementsByClassName("move-text")[0]
 
                 game_string += convertMoveToText(move)
             }
@@ -26,7 +26,7 @@ function addLichessAnalysisButton_analysis() {
     let storage_id2 = "analy"
 
     function add_button() {
-        let names = document.getElementsByClassName("user-username-component user-username-dark user-username-link user-tagline-username")
+        let names = document.getElementsByClassName("user-username-component")
         let opponent_name = names[0].textContent
         let my_name = names[1].textContent
 

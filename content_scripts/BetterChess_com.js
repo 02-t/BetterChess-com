@@ -78,7 +78,7 @@ function getDate() {
 
 
 function getHeader(my_name, opponent_name, white_name) {
-    let ratings = document.getElementsByClassName("user-tagline-rating user-tagline-dark")
+    let ratings = document.getElementsByClassName("user-tagline-rating")
     let opponent_rating = ratings[0].textContent.replace(")", "").replace("(", "").trim()
     let my_rating = ratings[1].textContent.replace(")", "").replace("(", "").trim()
 
@@ -121,9 +121,9 @@ function main() {
         }, 100)
     }
     
-    if (url.indexOf("www.chess.com/analysis/game/") > -1) { // waits for when there are more than 2 elements with the class "move-node svelte-nkpmj2" then calls function
+    if (url.indexOf("www.chess.com/analysis/game/") > -1) { // waits for when there are more than 2 elements with the class "move-node" then calls function
         var checkExist = setInterval(function() { 
-            if ((document.getElementsByClassName("move-node svelte-nkpmj2")).length > 1) {
+            if ((document.getElementsByClassName("move-node")).length > 1) {
             setTimeout(addLichessAnalysisButton_analysis, 300)
             clearInterval(checkExist)
             }

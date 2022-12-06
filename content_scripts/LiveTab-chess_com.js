@@ -7,7 +7,7 @@ function addLichessAnalysisButton_livegame () {
         let white_name = document.title.replace("Chess:", "").trimStart().split(" ")[0]
         if (white_name == "Play") white_name = document.getElementsByClassName("user-username username")[0].textContent.trim()
 
-        let names = document.getElementsByClassName("user-username-component user-username-dark user-username-link user-tagline-username")
+        let names = document.getElementsByClassName("user-username-component")
         let oponent_name = names[0].textContent
         let my_name = names[1].textContent
 
