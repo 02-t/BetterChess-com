@@ -45,6 +45,7 @@ function disableUserInfo() {
         toDisable("post-view-meta-image", hide)
         toDisable("profile-header-avatar", hide)
         toDisable("user-avatar-image", hide)
+        toDisable("player-avatar", hide)
         toDisable("player-image", hide)
         toDisable("playerbox-avatar", hide)
     }
